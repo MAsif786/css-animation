@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jazzina Animation Library - JAL Sample</title>
+		<link rel="stylesheet" href="jazzina.css">
+		<link rel="stylesheet" href="style.css">
+		
+		
+<style>
+
+/*
+==============================================
+CenterRotate
+==============================================
+*/
+
+
+.centerRotate{
+
+
+-webkit-transform-origin:left center;
+
+	animation: centerRotate 1s ease infinite ;
+	-webkit-animation: centerRotate  1s ease infinite ;
+
+	visibility: visible !important;	
+}
+
+
+@keyframes centerRotate {
+
+	50% {
+		background-color:red;
+	}	
+}
+
+@-webkit-keyframes centerRotate {
+
+	0% {
+		-webkit-transform:scaleZ(.1);
+	}		
+	50% {
+		-webkit-transform:rotateZ(.9);
+	}	
+}
+
+
+
+
+
+
+
+
+</style>		
+	
+		
+	</head>
+
+	<body >
+		<header>
+			<h1 id="logo"><a href="index.html">Jazzina Animation Library - JAL</a></h1>
+		<nav class="nav">
+			<ul>
+				<li><a href="sample.html">Sample File</a></li>
+				<li><a href="https://github.com/umair-iftikhar/css-animation/wiki">Wiki</a></li>
+				<li><a href="https://github.com/umair-iftikhar/css-animation/">Download</a></li>
+				<li><a href="#list">Reference</a></li>
+			</ul>
+		</nav>
+		</header>
+<br/><br/><br/>
+<br/><br/>
+<center><h1 id="object" class="centerRotate">Jazzina Animation Library</h1></center>
+<br/><br/><br/>
+<div class="">
+<p><center><strong> Click </strong>the Buttons and check animations</center></p>
+
+<button type="button" onclick="document.getElementById('object').className=('slideDown')">slideDown</button>
+<button type="button" onclick="document.getElementById('object').className=('slideUp')">slideUp</button>
+<button type="button" onclick="document.getElementById('object').className=('slideLeft')">slideLeft</button>
+
+
+<button type="button" onclick="document.getElementById('object').className=('slideRight')">slideRight</button>
+
+<button type="button" onclick="document.getElementById('object').className=('expandUp')">expandUp</button>
+
+<button type="button" onclick="document.getElementById('object').className=('fadeIn')">fadeIn</button>
+<button type="button" onclick="document.getElementById('object').className=('expandOpen')">expandOpen</button>
+<button type="button" onclick="document.getElementById('object').className=('bigEntrance')">bigEntrance</button>
+
+<button type="button" onclick="document.getElementById('object').className=('hatch')">Hatch</button>
+<button type="button" onclick="document.getElementById('object').className=('bounce')">Bounce</button>
+<button type="button" onclick="document.getElementById('object').className=('pulse')">Pulse</button>
+
+<button type="button" onclick="document.getElementById('object').className=('floating')">Floating</button>
+<button type="button" onclick="document.getElementById('object').className=('tossing')">Tossing</button>
+<button type="button" onclick="document.getElementById('object').className=('pullUp')">PullUp</button>
+
+<button type="button" onclick="document.getElementById('object').className=('pullDown')">PullDown</button>
+
+
+<button type="button" onclick="document.getElementById('object').className=('flapLeft')">flapLeft</button>
+<button type="button" onclick="document.getElementById('object').className=('flapRight')">flapRight</button>
+
+
+<button type="button" onclick="document.getElementById('object').className=('stretchLeft')">StretchLeft</button>
+<button type="button" onclick="document.getElementById('object').className=('stretchRight')">StretchRight</button>
+
+
+<button class="lastbtn" type="button" onclick="document.getElementById('object').className=('slideExpandUp')">slideExpandUp</button>
+
+</div>
+<br/><br/><br/><br/>
+<p class="slideDown">This is a CSS Library in which you can use animation in a simple way. Just add class in your object and done. Above heading h1 contain class <strong>.pulse</strong> in "Jazzina Animation Library" text.</p>
+<p>just link <a href="jazzina.css">jazzina.css</a> in <strong>link</strong> tag.</p>
+For complete reference of all Classes <a href="#list">Click Here</a>
+
+<br/><br/><br/><br/><br/><br/>
+
+<hr/>
+<br/>
+
+<center>By <a href="https://github.com/umair-iftikhar">Umair Iftikhar</a>. +92-311-7111663 or <a href="https://facebook.com/zuki786">fb.com/zuki786</a></center>
+<hr/>
+
+
+<script>
+
+function {
+
+var x=getElementByTag('button');
+ x.className="flapLeft";
+
+
+}
+
+</script>
+
+
+	</body>
+</html>
